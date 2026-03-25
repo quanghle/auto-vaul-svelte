@@ -1,20 +1,14 @@
-# auto-vaul-svelte
+# autopilot-vaul-svelte
 
 An unstyled drawer component for Svelte that can be used as a Dialog replacement on tablet and mobile devices. It uses [Bits' Dialog primitive](https://www.bits-ui.com/docs/components/dialog) under the hood.
 
 ## Usage
 
-To start using the library, install it in your project:
-
-```bash
-npm install auto-vaul-svelte
-```
-
 Use the drawer in your app.
 
 ```svelte
 <script>
-	import { Drawer } from "auto-vaul-svelte";
+	import { Drawer } from "autopilot-vaul-svelte";
 </script>
 
 <Drawer.Root>
