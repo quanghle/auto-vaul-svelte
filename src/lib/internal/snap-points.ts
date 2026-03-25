@@ -1,6 +1,6 @@
 import { tick } from "svelte";
 import { derived, get, type Writable } from "svelte/store";
-import { TRANSITIONS, VELOCITY_THRESHOLD } from "./constants.js";
+import { TRANSFORM_TRANSITION, OPACITY_TRANSITION, VELOCITY_THRESHOLD } from "./constants.js";
 import { effect, set, isVertical, isBottomOrRight } from "./helpers/index.js";
 import type { DrawerDirection } from "./types.js";
 
@@ -113,9 +113,7 @@ export function handleSnapPoints({
 			onSnapPointChange(newSnapPointIndex);
 
 			set($drawerRef, {
-				transition: `transform ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(
-					","
-				)})`,
+				transition: TRANSFORM_TRANSITION,
 				transform: isVertical($direction)
 					? `translate3d(0, ${dimension}px, 0)`
 					: `translate3d(${dimension}px, 0, 0)`,
@@ -130,16 +128,12 @@ export function handleSnapPoints({
 				newSnapPointIndex !== $fadeFromIndex
 			) {
 				set($overlayRef, {
-					transition: `opacity ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(
-						","
-					)})`,
+					transition: OPACITY_TRANSITION,
 					opacity: "0",
 				});
 			} else {
 				set($overlayRef, {
-					transition: `opacity ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(
-						","
-					)})`,
+					transition: OPACITY_TRANSITION,
 					opacity: "1",
 				});
 			}
@@ -182,7 +176,7 @@ export function handleSnapPoints({
 
 		if (isOverlaySnapPoint) {
 			set($overlayRef, {
-				transition: `opacity ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(",")})`,
+				transition: OPACITY_TRANSITION,
 			});
 		}
 
@@ -312,7 +306,6 @@ export function handleSnapPoints({
 	}
 
 	return {
-		isLastSnapPoint,
 		shouldFade,
 		getPercentageDragged,
 		activeSnapPointIndex,
