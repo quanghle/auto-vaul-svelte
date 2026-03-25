@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Drawer } from "$lib/index.js";
+	import { base } from "$app/paths";
 	import CenteredContent from "../(components)/centered-content.svelte";
 </script>
 
@@ -19,7 +20,7 @@
 				<CenteredContent>
 					<p class="mb-8 text-gray-600">
 						Here are
-						<a href="/examples" class="underline">some more examples</a>
+						<a href="{base}/examples" class="underline">some more examples</a>
 						of the component in action.
 					</p>
 
