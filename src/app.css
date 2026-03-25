@@ -8,6 +8,8 @@
 
 html {
 	overflow-x: hidden;
+	background: black;
+	height: -webkit-fill-available;
 }
 
 body {
@@ -21,17 +23,9 @@ main {
 	min-height: -webkit-fill-available;
 }
 
-html {
-	background: black;
-}
-
 main {
 	min-height: 100vh;
 	background: white;
-}
-
-html {
-	height: -webkit-fill-available;
 }
 
 a {
