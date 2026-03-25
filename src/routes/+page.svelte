@@ -64,7 +64,7 @@
 							<div class="mx-auto mb-8 h-1.5 w-12 flex-shrink-0 rounded-full bg-gray-300"></div>
 							<CenteredContent>
 								<p class="mb-4 text-gray-600">
-									👋 Welcome! This is a drawer built with <strong>auto-vaul-svelte</strong>.
+									👋 Welcome! This is a drawer built with <strong>autopilot-vaul-svelte</strong>.
 								</p>
 								<p class="mb-4 text-gray-600">
 									Swipe down to dismiss, or explore the demos below to see everything the library
@@ -96,17 +96,9 @@
 	<div class="space-y-3">
 		<div class="overflow-hidden rounded-lg bg-gray-900 shadow-lg">
 			<div class="flex items-center gap-2 border-b border-gray-700 px-4 py-2">
-				<span class="text-xs text-gray-400">npm</span>
-			</div>
-			<pre class="overflow-x-auto p-4 text-sm text-gray-100"><code
-					>npm install auto-vaul-svelte</code
-				></pre>
-		</div>
-		<div class="overflow-hidden rounded-lg bg-gray-900 shadow-lg">
-			<div class="flex items-center gap-2 border-b border-gray-700 px-4 py-2">
 				<span class="text-xs text-gray-400">pnpm</span>
 			</div>
-			<pre class="overflow-x-auto p-4 text-sm text-gray-100"><code>pnpm add auto-vaul-svelte</code
+			<pre class="overflow-x-auto p-4 text-sm text-gray-100"><code>pnpm add autopilot-vaul-svelte</code
 				></pre>
 		</div>
 	</div>
@@ -125,7 +117,7 @@
 		</div>
 		<pre class="overflow-x-auto p-4 text-sm text-gray-100"><code
 				>&lt;script&gt;
-  import &lbrace; Drawer &rbrace; from "auto-vaul-svelte";
+  import &lbrace; Drawer &rbrace; from "autopilot-vaul-svelte";
 &lt;/script&gt;
 
 &lt;Drawer.Root&gt;
@@ -553,29 +545,6 @@
 				target="_blank"
 			>
 				GitHub
-				<svg
-					fill="none"
-					height="16"
-					stroke="currentColor"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					viewBox="0 0 24 24"
-					width="16"
-					aria-hidden="true"
-					class="ml-0.5 h-3 w-3"
-				>
-					<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-					<path d="M15 3h6v6"></path>
-					<path d="M10 14L21 3"></path>
-				</svg>
-			</a>
-			<a
-				class="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-900"
-				href="https://www.npmjs.com/package/auto-vaul-svelte"
-				target="_blank"
-			>
-				npm
 				<svg
 					fill="none"
 					height="16"
