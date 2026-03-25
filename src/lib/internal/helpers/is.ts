@@ -15,10 +15,6 @@ const nonTextInputTypes = new Set([
 
 export const isBrowser = typeof document !== "undefined";
 
-export function isFunction(v: unknown): v is (...args: unknown[]) => unknown {
-	return typeof v === "function";
-}
-
 export function isInput(target: Element) {
 	return (
 		(target instanceof HTMLInputElement && !nonTextInputTypes.has(target.type)) ||
@@ -28,11 +24,9 @@ export function isInput(target: Element) {
 }
 
 export function isVertical(direction: DrawerDirection) {
-	if (direction === "top" || direction === "bottom") return true;
-	return false;
+	return direction === "top" || direction === "bottom";
 }
 
 export function isBottomOrRight(direction: DrawerDirection) {
-	if (direction === "bottom" || direction === "right") return true;
-	return false;
+	return direction === "bottom" || direction === "right";
 }
