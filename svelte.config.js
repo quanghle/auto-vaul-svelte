@@ -11,7 +11,7 @@ const config = {
 			fallback: "404.html",
 		}),
 		paths: {
-			base: dev ? "" : "/auto-vaul-svelte",
+			base: dev ? "" : "/autopilot-vaul-svelte",
 		},
 	},
 };

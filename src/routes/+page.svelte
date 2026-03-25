@@ -79,7 +79,7 @@
 				</Drawer.Portal>
 			</Drawer.Root>
 			<a
-				href="https://github.com/quanghle/auto-vaul-svelte"
+				href="https://github.com/quanghle/autopilot-vaul-svelte"
 				class="rounded-full px-6 py-3 text-sm font-semibold ring-1 ring-gray-300 ring-inset hover:bg-gray-50"
 				target="_blank"
 			>
@@ -98,7 +98,8 @@
 			<div class="flex items-center gap-2 border-b border-gray-700 px-4 py-2">
 				<span class="text-xs text-gray-400">pnpm</span>
 			</div>
-			<pre class="overflow-x-auto p-4 text-sm text-gray-100"><code>pnpm add autopilot-vaul-svelte</code
+			<pre class="overflow-x-auto p-4 text-sm text-gray-100"><code
+					>pnpm add autopilot-vaul-svelte</code
 				></pre>
 		</div>
 	</div>
@@ -541,7 +542,7 @@
 		<div class="flex gap-6">
 			<a
 				class="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-900"
-				href="https://github.com/quanghle/auto-vaul-svelte"
+				href="https://github.com/quanghle/autopilot-vaul-svelte"
 				target="_blank"
 			>
 				GitHub
