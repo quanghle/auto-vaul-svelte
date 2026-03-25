@@ -5,8 +5,8 @@ import { getOptionUpdater } from "./options.js";
 describe("getOptionUpdater", () => {
 	it("updates the store value for a given key", () => {
 		const options = {
-			color: writable("red" as unknown),
-			size: writable(10 as unknown),
+			color: writable<unknown>("red"),
+			size: writable<unknown>(10),
 		};
 		const update = getOptionUpdater(options);
 
@@ -16,7 +16,7 @@ describe("getOptionUpdater", () => {
 
 	it("does nothing when value is undefined", () => {
 		const options = {
-			color: writable("red" as unknown),
+			color: writable<unknown>("red"),
 		};
 		const update = getOptionUpdater(options);
 
@@ -26,7 +26,7 @@ describe("getOptionUpdater", () => {
 
 	it("does nothing when key does not exist in options", () => {
 		const options = {
-			color: writable("red" as unknown),
+			color: writable<unknown>("red"),
 		};
 		const update = getOptionUpdater(options);
 
@@ -36,9 +36,9 @@ describe("getOptionUpdater", () => {
 
 	it("allows setting falsy non-undefined values", () => {
 		const options = {
-			count: writable(5 as unknown),
-			flag: writable(true as unknown),
-			name: writable("hello" as unknown),
+			count: writable<unknown>(5),
+			flag: writable<unknown>(true),
+			name: writable<unknown>("hello"),
 		};
 		const update = getOptionUpdater(options);
 
