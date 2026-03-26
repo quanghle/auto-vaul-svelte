@@ -320,9 +320,11 @@ export function createVaul(props: CreateVaulProps) {
 			return false;
 		}
 
-		// Allow dragging if the drawer is already swiped away from its resting position
-		if (swipeAmount !== null && swipeAmount !== 0) {
-			return true;
+		// Allow dragging if the drawer is already swiped in its opening direction
+		if (swipeAmount !== null) {
+			if ($direction === "bottom" || $direction === "right" ? swipeAmount > 0 : swipeAmount < 0) {
+				return true;
+			}
 		}
 
 		// Don't drag if there's highlighted text

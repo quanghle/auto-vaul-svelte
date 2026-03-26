@@ -62,5 +62,6 @@ export function isIOS(): boolean | undefined {
 }
 
 export function isSafari(): boolean | undefined {
+	if (typeof navigator === "undefined") return undefined;
 	return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 }
