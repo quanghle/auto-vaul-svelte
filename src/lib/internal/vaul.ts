@@ -662,8 +662,14 @@ export function createVaul(props: CreateVaulProps) {
 		const $shouldScaleBackground = get(shouldScaleBackground);
 		const $isOpen = get(isOpen);
 
-		// Don't reset background if swiped upwards
-		if ($shouldScaleBackground && currentSwipeAmount && currentSwipeAmount > 0 && $isOpen) {
+		// Don't reset background if swiped past the resting position (opposite of close direction)
+		const isSwipedInCloseDirection =
+			currentSwipeAmount !== null &&
+			($direction === "bottom" || $direction === "right"
+				? currentSwipeAmount > 0
+				: currentSwipeAmount < 0);
+
+		if ($shouldScaleBackground && isSwipedInCloseDirection && $isOpen) {
 			set(wrapper, getWrapperScaleStyles($direction), true);
 		}
 	}
