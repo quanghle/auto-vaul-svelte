@@ -263,12 +263,13 @@ describe("functionName", () => {
 
 ### Pull Request Checks (`ci.yml`)
 
-Four parallel jobs run on every PR to `main`:
+Five parallel jobs run on every PR to `main`:
 
 - **lint** — Prettier + ESLint
 - **typecheck** — `svelte-check` type checking
 - **test** — Vitest unit tests + Playwright E2E tests (Chromium)
-- **build** — Full production build (`vite build` + `svelte-package` + `publint`)
+- **build** — Site build (`vite build`)
+- **package** — Library packaging (`svelte-package` + `publint`)
 
 Playwright test reports are uploaded as artifacts on failure.
 
