@@ -263,9 +263,10 @@ describe("functionName", () => {
 
 ### Pull Request Checks (`ci.yml`)
 
-Three parallel jobs run on every PR to `main`:
+Four parallel jobs run on every PR to `main`:
 
-- **lint** — Prettier + ESLint + `svelte-check` type checking
+- **lint** — Prettier + ESLint
+- **typecheck** — `svelte-check` type checking
 - **test** — Vitest unit tests + Playwright E2E tests (Chromium)
 - **build** — Full production build (`vite build` + `svelte-package` + `publint`)
 
