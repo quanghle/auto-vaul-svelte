@@ -62,7 +62,7 @@
 										<p class="mb-2 text-gray-600">
 											You can view more examples
 											<a
-												href="https://github.com/huntabyte/vaul-svelte#examples"
+												href="https://github.com/quanghle/autopilot-vaul-svelte#examples"
 												class="underline"
 												target="_blank"
 											>
@@ -76,7 +76,7 @@
 									<div class="mx-auto flex max-w-md justify-end gap-6">
 										<a
 											class="flex items-center gap-0.25 text-xs text-gray-600"
-											href="https://github.com/huntabyte/vaul-svelte"
+											href="https://github.com/quanghle/autopilot-vaul-svelte"
 											target="_blank"
 										>
 											GitHub
@@ -99,10 +99,10 @@
 										</a>
 										<a
 											class="flex items-center gap-0.25 text-xs text-gray-600"
-											href="https://twitter.com/huntabyte"
+											href="https://github.com/quanghle"
 											target="_blank"
 										>
-											Twitter
+											Author
 											<svg
 												fill="none"
 												height="16"
@@ -131,7 +131,7 @@
 				<div class="mx-auto flex max-w-md justify-end gap-6">
 					<a
 						class="flex items-center gap-0.25 text-xs text-gray-600"
-						href="https://github.com/huntabyte/vaul-svelte"
+						href="https://github.com/quanghle/autopilot-vaul-svelte"
 						target="_blank"
 					>
 						GitHub
@@ -154,10 +154,10 @@
 					</a>
 					<a
 						class="flex items-center gap-0.25 text-xs text-gray-600"
-						href="https://twitter.com/huntabyte"
+						href="https://github.com/quanghle"
 						target="_blank"
 					>
-						Twitter
+						Author
 						<svg
 							fill="none"
 							height="16"

@@ -40,7 +40,7 @@
 	</svg>
 	<div class="mx-auto max-w-2xl pt-64 text-center">
 		<div class="relative flex flex-col">
-			<h1 class="relative mb-4 text-7xl font-semibold">Vaul Svelte</h1>
+			<h1 class="relative mb-4 text-7xl font-semibold">Autopilot Vaul Svelte</h1>
 			<p class="text-xl text-gray-600">Drawer component for Svelte.</p>
 		</div>
 		<div class="mt-6 flex justify-center gap-4">
@@ -69,7 +69,7 @@
 							<div class="mx-auto flex max-w-md justify-end gap-6">
 								<a
 									class="flex items-center gap-0.25 text-xs text-gray-600"
-									href="https://github.com/huntabyte/vaul-svelte"
+									href="https://github.com/quanghle/autopilot-vaul-svelte"
 									target="_blank"
 								>
 									GitHub
@@ -92,10 +92,10 @@
 								</a>
 								<a
 									class="flex items-center gap-0.25 text-xs text-gray-600"
-									href="https://twitter.com/huntabyte"
+									href="https://github.com/quanghle"
 									target="_blank"
 								>
-									Twitter
+									Author
 									<svg
 										fill="none"
 										height="16"
@@ -119,7 +119,7 @@
 				</Drawer.Portal>
 			</Drawer.Root>
 			<a
-				href="https://github.com/huntabyte/vaul-svelte"
+				href="https://github.com/quanghle/autopilot-vaul-svelte"
 				class="rounded-full px-4 py-2.5 text-sm font-semibold hover:bg-gray-100"
 				target="_blank"
 			>

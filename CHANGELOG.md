@@ -1,4 +1,6 @@
-# vaul-svelte
+# autopilot-vaul-svelte
+
+> Forked from [vaul-svelte](https://github.com/huntabyte/vaul-svelte). Changelog entries below v0.3.2 reference the original repository.
 
 ## 0.3.2
 
