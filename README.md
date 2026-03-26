@@ -45,18 +45,18 @@ pnpm add autopilot-vaul-svelte
 
 Contains all parts of a dialog. Use `shouldScaleBackground` to enable background scaling, which requires an element with `[data-vaul-drawer-wrapper]` data attribute to scale its background. Can be controlled by binding to the `open` prop or using the `onOpenChange` prop.
 
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| `open` | `boolean` | `false` | Controlled open state. Use `bind:open` for two-way binding. |
-| `onOpenChange` | `(open: boolean) => void` | — | Callback fired when the open state changes. |
-| `shouldScaleBackground` | `boolean` | `false` | Scale the background when open. Requires `[data-vaul-drawer-wrapper]` on wrapper element. |
-| `closeThreshold` | `number` | `0.25` | Number between 0 and 1 that determines when the drawer should be closed. Example: threshold of 0.5 would close the drawer if the user swiped for 50% of the height of the drawer or more. |
-| `scrollLockTimeout` | `number` | `100` | Duration (ms) for which the drawer is not draggable after scrolling content inside the drawer. |
-| `snapPoints` | `(number \| string)[]` | — | Array of snap points. Use numbers (0–1) for percentage of screen height or strings like `"148px"` for pixel values. Should go from least visible. Example: `[0.2, 0.5, 0.8]`. |
-| `activeSnapPoint` | `number \| string \| null` | — | The currently active snap point. Supports `bind:activeSnapPoint`. |
-| `fadeFromIndex` | `number` | last snap point | Index of a `snapPoint` from which the overlay fade should be applied. |
-| `direction` | `"top" \| "bottom" \| "left" \| "right"` | `"bottom"` | Direction of the drawer. |
-| `backgroundColor` | `string` | `"black"` | Background color of the body when the drawer is open and `shouldScaleBackground` is true. |
+| Prop                    | Type                                     | Default         | Description                                                                                                                                                                               |
+| ----------------------- | ---------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `open`                  | `boolean`                                | `false`         | Controlled open state. Use `bind:open` for two-way binding.                                                                                                                               |
+| `onOpenChange`          | `(open: boolean) => void`                | —               | Callback fired when the open state changes.                                                                                                                                               |
+| `shouldScaleBackground` | `boolean`                                | `false`         | Scale the background when open. Requires `[data-vaul-drawer-wrapper]` on wrapper element.                                                                                                 |
+| `closeThreshold`        | `number`                                 | `0.25`          | Number between 0 and 1 that determines when the drawer should be closed. Example: threshold of 0.5 would close the drawer if the user swiped for 50% of the height of the drawer or more. |
+| `scrollLockTimeout`     | `number`                                 | `100`           | Duration (ms) for which the drawer is not draggable after scrolling content inside the drawer.                                                                                            |
+| `snapPoints`            | `(number \| string)[]`                   | —               | Array of snap points. Use numbers (0–1) for percentage of screen height or strings like `"148px"` for pixel values. Should go from least visible. Example: `[0.2, 0.5, 0.8]`.             |
+| `activeSnapPoint`       | `number \| string \| null`               | —               | The currently active snap point. Supports `bind:activeSnapPoint`.                                                                                                                         |
+| `fadeFromIndex`         | `number`                                 | last snap point | Index of a `snapPoint` from which the overlay fade should be applied.                                                                                                                     |
+| `direction`             | `"top" \| "bottom" \| "left" \| "right"` | `"bottom"`      | Direction of the drawer.                                                                                                                                                                  |
+| `backgroundColor`       | `string`                                 | `"black"`       | Background color of the body when the drawer is open and `shouldScaleBackground` is true.                                                                                                 |
 
 `[data-vaul-no-drag]`: When interacting with an element with this data attribute, the drawer won't be dragged.
 

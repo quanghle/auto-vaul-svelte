@@ -29,16 +29,16 @@ pnpm run dev
 
 ### Useful Commands
 
-| Command | Description |
-| --- | --- |
-| `pnpm run dev` | Start dev server |
-| `pnpm run build` | Build the site and package |
-| `pnpm run test` | Run unit tests (watch mode) |
-| `pnpm run test --run` | Run unit tests once |
-| `pnpm run test:e2e` | Run Playwright E2E tests |
-| `pnpm run lint` | Check formatting and lint rules |
-| `pnpm run format` | Auto-format code |
-| `pnpm run check` | Run type checking |
+| Command               | Description                     |
+| --------------------- | ------------------------------- |
+| `pnpm run dev`        | Start dev server                |
+| `pnpm run build`      | Build the site and package      |
+| `pnpm run test`       | Run unit tests (watch mode)     |
+| `pnpm run test --run` | Run unit tests once             |
+| `pnpm run test:e2e`   | Run Playwright E2E tests        |
+| `pnpm run lint`       | Check formatting and lint rules |
+| `pnpm run format`     | Auto-format code                |
+| `pnpm run check`      | Run type checking               |
 
 ## Project Structure
 

@@ -81,7 +81,8 @@
 			<a
 				href="https://github.com/quanghle/autopilot-vaul-svelte"
 				class="rounded-full px-6 py-3 text-sm font-semibold ring-1 ring-gray-300 ring-inset hover:bg-gray-50"
-				target="_blank" rel="noopener noreferrer"
+				target="_blank"
+				rel="noopener noreferrer"
 			>
 				GitHub <span aria-hidden="true">→</span>
 			</a>
@@ -439,7 +440,8 @@
 			<a
 				href="https://www.bits-ui.com/docs/components/dialog#trigger"
 				class="underline"
-				target="_blank" rel="noopener noreferrer">Dialog.Trigger</a
+				target="_blank"
+				rel="noopener noreferrer">Dialog.Trigger</a
 			> props.
 		</p>
 	</div>
@@ -452,7 +454,8 @@
 			<a
 				href="https://www.bits-ui.com/docs/components/dialog#content"
 				class="underline"
-				target="_blank" rel="noopener noreferrer">Dialog.Content</a
+				target="_blank"
+				rel="noopener noreferrer">Dialog.Content</a
 			> props.
 		</p>
 	</div>
@@ -466,7 +469,8 @@
 			<a
 				href="https://www.bits-ui.com/docs/components/dialog#overlay"
 				class="underline"
-				target="_blank" rel="noopener noreferrer">Dialog.Overlay</a
+				target="_blank"
+				rel="noopener noreferrer">Dialog.Overlay</a
 			> props.
 		</p>
 	</div>
@@ -500,7 +504,8 @@
 			<a
 				href="https://www.bits-ui.com/docs/components/dialog#close"
 				class="underline"
-				target="_blank" rel="noopener noreferrer">Dialog.Close</a
+				target="_blank"
+				rel="noopener noreferrer">Dialog.Close</a
 			> props.
 		</p>
 	</div>
@@ -520,14 +525,23 @@
 <footer class="mx-auto max-w-3xl border-t border-gray-200 px-6 py-12">
 	<div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
 		<p class="text-sm text-gray-500">
-			Built with <a href="https://svelte.dev" class="underline" target="_blank" rel="noopener noreferrer">Svelte</a> and
-			<a href="https://www.bits-ui.com" class="underline" target="_blank" rel="noopener noreferrer">Bits UI</a>.
+			Built with <a
+				href="https://svelte.dev"
+				class="underline"
+				target="_blank"
+				rel="noopener noreferrer">Svelte</a
+			>
+			and
+			<a href="https://www.bits-ui.com" class="underline" target="_blank" rel="noopener noreferrer"
+				>Bits UI</a
+			>.
 		</p>
 		<div class="flex gap-6">
 			<a
 				class="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-900"
 				href="https://github.com/quanghle/autopilot-vaul-svelte"
-				target="_blank" rel="noopener noreferrer"
+				target="_blank"
+				rel="noopener noreferrer"
 			>
 				GitHub
 				<svg

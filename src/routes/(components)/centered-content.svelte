@@ -12,21 +12,31 @@
 	</p>
 	<p class="mb-2 text-gray-600">
 		It comes unstyled, has gesture-driven animations, and was originally made by
-		<a href="https://emilkowal.ski/" class="underline" target="_blank" rel="noopener noreferrer"> Emil Kowalski </a>
+		<a href="https://emilkowal.ski/" class="underline" target="_blank" rel="noopener noreferrer">
+			Emil Kowalski
+		</a>
 		and ported to Svelte by
-		<a href="https://x.com/huntabyte" class="underline" target="_blank" rel="noopener noreferrer">Huntabyte</a>
+		<a href="https://x.com/huntabyte" class="underline" target="_blank" rel="noopener noreferrer"
+			>Huntabyte</a
+		>
 		.
 	</p>
 	<p class="mb-8 text-gray-600">
 		It uses
-		<a href="https://www.bits-ui.com/docs/components/dialog" class="underline" target="_blank" rel="noopener noreferrer">
+		<a
+			href="https://www.bits-ui.com/docs/components/dialog"
+			class="underline"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Bits' Dialog primitive
 		</a>
 		under the hood and is inspired by
 		<a
 			href="https://twitter.com/devongovett/status/1674470185783402496"
 			class="underline"
-			target="_blank" rel="noopener noreferrer"
+			target="_blank"
+			rel="noopener noreferrer"
 		>
 			this tweet.
 		</a>
