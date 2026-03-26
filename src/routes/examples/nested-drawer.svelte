@@ -26,7 +26,7 @@
 						<a
 							href="https://www.bits-ui.com/docs/components/dialog"
 							class="underline"
-							target="_blank"
+							target="_blank" rel="noopener noreferrer"
 						>
 							Bits' Dialog primitive
 						</a>
@@ -34,7 +34,7 @@
 						<a
 							href="https://twitter.com/devongovett/status/1674470185783402496"
 							class="underline"
-							target="_blank"
+							target="_blank" rel="noopener noreferrer"
 						>
 							this tweet.
 						</a>
@@ -64,7 +64,7 @@
 											<a
 												href="https://github.com/quanghle/autopilot-vaul-svelte#examples"
 												class="underline"
-												target="_blank"
+												target="_blank" rel="noopener noreferrer"
 											>
 												here
 											</a>
@@ -77,7 +77,7 @@
 										<a
 											class="flex items-center gap-0.25 text-xs text-gray-600"
 											href="https://github.com/quanghle/autopilot-vaul-svelte"
-											target="_blank"
+											target="_blank" rel="noopener noreferrer"
 										>
 											GitHub
 											<svg
@@ -100,7 +100,7 @@
 										<a
 											class="flex items-center gap-0.25 text-xs text-gray-600"
 											href="https://github.com/quanghle"
-											target="_blank"
+											target="_blank" rel="noopener noreferrer"
 										>
 											Author
 											<svg
@@ -132,7 +132,7 @@
 					<a
 						class="flex items-center gap-0.25 text-xs text-gray-600"
 						href="https://github.com/quanghle/autopilot-vaul-svelte"
-						target="_blank"
+						target="_blank" rel="noopener noreferrer"
 					>
 						GitHub
 						<svg
@@ -155,7 +155,7 @@
 					<a
 						class="flex items-center gap-0.25 text-xs text-gray-600"
 						href="https://github.com/quanghle"
-						target="_blank"
+						target="_blank" rel="noopener noreferrer"
 					>
 						Author
 						<svg

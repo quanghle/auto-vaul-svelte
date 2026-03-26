@@ -46,7 +46,7 @@
 					<a
 						class="flex items-center gap-0.25 text-xs text-gray-600"
 						href="https://github.com/quanghle/autopilot-vaul-svelte"
-						target="_blank"
+						target="_blank" rel="noopener noreferrer"
 					>
 						GitHub
 						<svg
@@ -69,7 +69,7 @@
 					<a
 						class="flex items-center gap-0.25 text-xs text-gray-600"
 						href="https://github.com/quanghle"
-						target="_blank"
+						target="_blank" rel="noopener noreferrer"
 					>
 						Author
 						<svg
