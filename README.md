@@ -43,7 +43,7 @@ pnpm add autopilot-vaul-svelte
 
 ### Root
 
-Contains all parts of a dialog. Use `shouldScaleBackground` to enable background scaling, which requires an element with `[data-vaul-drawer-wrapper]` data attribute to scale its background. Can be controlled by binding to the `open` prop or using the `onOpenChange` prop.
+Contains all parts of a dialog. Use `shouldScaleBackground` to enable background scaling, which requires an element with `[data-vaul-drawer-wrapper]` data attribute to scale its background. The dialog can be controlled by binding to the `open` prop or by using the `onOpenChange` prop.
 
 | Prop                    | Type                                     | Default         | Description                                                                                                                                                                               |
 | ----------------------- | ---------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
