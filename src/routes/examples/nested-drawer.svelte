@@ -27,6 +27,7 @@
 							href="https://www.bits-ui.com/docs/components/dialog"
 							class="underline"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							Bits' Dialog primitive
 						</a>
@@ -35,6 +36,7 @@
 							href="https://twitter.com/devongovett/status/1674470185783402496"
 							class="underline"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							this tweet.
 						</a>
@@ -62,9 +64,10 @@
 										<p class="mb-2 text-gray-600">
 											You can view more examples
 											<a
-												href="https://github.com/huntabyte/vaul-svelte#examples"
+												href="https://github.com/quanghle/autopilot-vaul-svelte#examples"
 												class="underline"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												here
 											</a>
@@ -76,8 +79,9 @@
 									<div class="mx-auto flex max-w-md justify-end gap-6">
 										<a
 											class="flex items-center gap-0.25 text-xs text-gray-600"
-											href="https://github.com/huntabyte/vaul-svelte"
+											href="https://github.com/quanghle/autopilot-vaul-svelte"
 											target="_blank"
+											rel="noopener noreferrer"
 										>
 											GitHub
 											<svg
@@ -99,10 +103,11 @@
 										</a>
 										<a
 											class="flex items-center gap-0.25 text-xs text-gray-600"
-											href="https://twitter.com/huntabyte"
+											href="https://github.com/quanghle"
 											target="_blank"
+											rel="noopener noreferrer"
 										>
-											Twitter
+											Author
 											<svg
 												fill="none"
 												height="16"
@@ -131,8 +136,9 @@
 				<div class="mx-auto flex max-w-md justify-end gap-6">
 					<a
 						class="flex items-center gap-0.25 text-xs text-gray-600"
-						href="https://github.com/huntabyte/vaul-svelte"
+						href="https://github.com/quanghle/autopilot-vaul-svelte"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						GitHub
 						<svg
@@ -154,10 +160,11 @@
 					</a>
 					<a
 						class="flex items-center gap-0.25 text-xs text-gray-600"
-						href="https://twitter.com/huntabyte"
+						href="https://github.com/quanghle"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
-						Twitter
+						Author
 						<svg
 							fill="none"
 							height="16"

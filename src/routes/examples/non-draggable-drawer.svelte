@@ -45,8 +45,9 @@
 				<div class="mx-auto flex max-w-md justify-end gap-6">
 					<a
 						class="flex items-center gap-0.25 text-xs text-gray-600"
-						href="https://github.com/huntabyte/vaul-svelte"
+						href="https://github.com/quanghle/autopilot-vaul-svelte"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						GitHub
 						<svg
@@ -68,10 +69,11 @@
 					</a>
 					<a
 						class="flex items-center gap-0.25 text-xs text-gray-600"
-						href="https://twitter.com/huntabyte"
+						href="https://github.com/quanghle"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
-						Twitter
+						Author
 						<svg
 							fill="none"
 							height="16"
