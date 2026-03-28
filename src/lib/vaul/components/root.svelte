@@ -116,7 +116,6 @@
 <Dialog.Root
 	bind:open
 	onOpenChange={(o) => {
-		onOpenChange?.(o);
 		if (!o) {
 			closeDrawer();
 		} else {
