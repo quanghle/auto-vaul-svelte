@@ -846,8 +846,14 @@ export function createVaul(props: CreateVaulProps) {
 	}
 
 	function cleanup() {
-		if (closeTimeoutId) clearTimeout(closeTimeoutId);
-		if (closeResetTimeoutId) clearTimeout(closeResetTimeoutId);
+		if (closeTimeoutId) {
+			clearTimeout(closeTimeoutId);
+			closeTimeoutId = undefined;
+		}
+		if (closeResetTimeoutId) {
+			clearTimeout(closeResetTimeoutId);
+			closeResetTimeoutId = undefined;
+		}
 	}
 
 	return {
