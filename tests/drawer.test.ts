@@ -145,11 +145,16 @@ test.describe("Focus Trap", () => {
 		const drawer = page.locator("[data-vaul-drawer]");
 		await expect(drawer).toBeVisible();
 
-		// Tab through focusable elements — focus should stay inside the drawer
-		await page.keyboard.press("Tab");
-		await page.keyboard.press("Tab");
-		await page.keyboard.press("Tab");
+		// Focus the first button inside the drawer
+		await page.locator("#inside-first").focus();
+		expect(await page.evaluate(() => document.activeElement?.id)).toBe("inside-first");
 
+		// Tab to second button
+		await page.keyboard.press("Tab");
+		expect(await page.evaluate(() => document.activeElement?.id)).toBe("inside-second");
+
+		// Tab again — focus should wrap back inside the drawer, not escape to outside buttons
+		await page.keyboard.press("Tab");
 		const focused = await page.evaluate(() => document.activeElement?.id);
 		expect(focused).not.toBe("outside-button");
 		expect(focused).not.toBe("outside-button-after");
