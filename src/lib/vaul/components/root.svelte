@@ -25,6 +25,8 @@
 		children,
 	}: Props = $props();
 
+	let propDriven = false;
+
 	const {
 		states: { activeSnapPoint: localActiveSnapPoint, isOpen },
 		methods: { closeDrawer, openDrawer },
@@ -33,11 +35,14 @@
 	} = setCtx({
 		defaultOpen: open,
 		defaultActiveSnapPoint: activeSnapPoint,
-		onOpenChange: ({ next }) => {
-			if (open !== next) {
-				onOpenChange?.(next);
+		onOpenChange: ({ curr, next }) => {
+			if (curr !== next) {
+				if (!propDriven) {
+					onOpenChange?.(next);
+				}
 				open = next;
 			}
+			propDriven = false;
 			return next;
 		},
 		onActiveSnapPointChange: ({ next }) => {
@@ -105,18 +110,23 @@
 	});
 
 	$effect(() => {
-		if (open && !get(isOpen)) openDrawer();
+		if (open && !get(isOpen)) {
+			propDriven = true;
+			openDrawer();
+		}
 	});
 
 	$effect(() => {
-		if (!open && get(isOpen)) closeDrawer();
+		if (!open && get(isOpen)) {
+			propDriven = true;
+			closeDrawer();
+		}
 	});
 </script>
 
 <Dialog.Root
 	bind:open
 	onOpenChange={(o) => {
-		onOpenChange?.(o);
 		if (!o) {
 			closeDrawer();
 		} else {
