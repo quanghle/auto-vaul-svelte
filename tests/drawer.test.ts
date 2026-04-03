@@ -133,6 +133,65 @@ test.describe("Non-draggable Drawer", () => {
 	});
 });
 
+test.describe("Focus Trap", () => {
+	test.beforeEach(async ({ page }) => {
+		await page.goto("/autopilot-vaul-svelte/test/focus-trap");
+	});
+
+	test("traps focus within drawer by default", async ({ page }) => {
+		const trigger = page.locator("#trigger");
+		await trigger.click();
+
+		const drawer = page.locator("[data-vaul-drawer]");
+		await expect(drawer).toBeVisible();
+
+		// Focus the first button inside the drawer
+		await page.locator("#inside-first").focus();
+		expect(await page.evaluate(() => document.activeElement?.id)).toBe("inside-first");
+
+		// Tab to second button
+		await page.keyboard.press("Tab");
+		expect(await page.evaluate(() => document.activeElement?.id)).toBe("inside-second");
+
+		// Tab again — focus should wrap back to the first inside button (focus trapped in drawer)
+		await page.keyboard.press("Tab");
+		const focused = await page.evaluate(() => document.activeElement?.id);
+		expect(focused).toBe("inside-first");
+	});
+});
+
+test.describe("Focus Trap Disabled", () => {
+	test.beforeEach(async ({ page }) => {
+		await page.goto("/autopilot-vaul-svelte/test/focus-trap-disabled");
+	});
+
+	test("allows focus to leave drawer when trapFocus is false", async ({ page }) => {
+		const trigger = page.locator("#trigger");
+		await trigger.click();
+
+		const drawer = page.locator("[data-vaul-drawer]");
+		await expect(drawer).toBeVisible();
+
+		// Focus the last button inside the drawer
+		await page.locator("#inside-second").focus();
+		expect(await page.evaluate(() => document.activeElement?.id)).toBe("inside-second");
+
+		// Tab — focus should be able to leave the drawer since trapFocus is false
+		await page.keyboard.press("Tab");
+		const focusState = await page.evaluate(() => {
+			const drawer = document.querySelector("[data-vaul-drawer]");
+			const activeElement = document.activeElement;
+
+			return {
+				activeElementId: activeElement?.id ?? "",
+				isInsideDrawer: drawer?.contains(activeElement) ?? false,
+			};
+		});
+		expect(focusState.activeElementId).not.toBe("inside-second");
+		expect(focusState.isInsideDrawer).toBe(false);
+	});
+});
+
 test.describe("Examples Page", () => {
 	test("loads and displays example drawers", async ({ page }) => {
 		await page.goto("/autopilot-vaul-svelte/examples");
